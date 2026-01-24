@@ -1,5 +1,10 @@
 .containerPrincipal {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
+}
+
+.testeLink {
+  text-decoration: none;
+  color:blue;
 }

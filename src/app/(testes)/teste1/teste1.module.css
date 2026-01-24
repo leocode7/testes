@@ -1,0 +1,9 @@
+.containerPrincipal {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.frase {
+  color: red;
+}

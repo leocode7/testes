@@ -1,29 +1,16 @@
 'use client'
 
-import { useState } from "react";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const [frase, setFrase] = useState<string>("");
-  const [texto, setTexto] = useState<string>("");
-
-  const alterarFrase = () => {
-    setFrase(texto);
-  }
-
   return (
     <div className={styles.containerPrincipal}>
-      <h1>HOME</h1>
+      <h1>LISTA DOS TESTES</h1>
 
-      <div>
-        <input type="text"
-          value={texto}
-          onChange={(e) => setTexto(e.target.value)}
-        />
-        <button onClick={alterarFrase}>Mudar frase</button>
-      </div>
-
-      <h2>Sua mensagem: { frase}</h2>
+      <ul>
+        <li><Link href={"/teste1"} className={styles.testeLink}>Teste 1 - Mudar frase através de um input</Link></li>
+      </ul>
     </div>
   );
 }
