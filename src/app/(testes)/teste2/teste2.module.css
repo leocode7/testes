@@ -1,0 +1,29 @@
+.base {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.A {
+  background-color: blue;
+}
+
+.B {
+  background-color: red;
+}
+
+.C {
+  background-color: green;
+}
+
+.D {
+  background-color: blueviolet;
+}
+
+.containerBotoes {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 20px;
+}
