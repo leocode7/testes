@@ -9,6 +9,7 @@ const Teste2 = () => {
   const [active, setActive] = useState<Option>('A');
 
   return (
+    // Adicionado mais uma classe baseada no valor de "active" com css.module
     <div className={`${styles.base} ${styles[active]}`}>
       <div className={styles.containerBotoes}>
         <button onClick={() => setActive('A')}>Azul</button>
