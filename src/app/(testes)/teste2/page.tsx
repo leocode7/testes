@@ -12,10 +12,10 @@ const Teste2 = () => {
     // Adicionado mais uma classe baseada no valor de "active" com css.module
     <div className={`${styles.base} ${styles[active]}`}>
       <div className={styles.containerBotoes}>
-        <button onClick={() => setActive('A')}>Azul</button>
-        <button onClick={() => setActive('B')}>Vermelho</button>
-        <button onClick={() => setActive('C')}>Verde</button>
-        <button onClick={() => setActive('D')}>Roxo</button>
+        <button className={active === "A" ? styles.buttonActive : ''} onClick={() => setActive('A')}>Azul</button>
+        <button className={active === "B" ? styles.buttonActive : ''} onClick={() => setActive('B')}>Vermelho</button>
+        <button className={active === "C" ? styles.buttonActive : ''} onClick={() => setActive('C')}>Verde</button>
+        <button className={active === "D" ? styles.buttonActive : ''} onClick={() => setActive('D')}>Roxo</button>
       </div>
     </div>
   )
