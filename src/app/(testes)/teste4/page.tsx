@@ -8,11 +8,11 @@ const Teste4 = () => {
   const [ativo, setAtivo] = useState<boolean>(false);
 
   return (
-    <div>
+    <div className={styles.containerPrincipal}>
       <h1>Teste 4</h1>
 
       <button
-        onClick={() => setAtivo(!ativo)}
+        onClick={() => setAtivo(prev => (!prev))}
         className={clsx(styles.button, ativo && styles.ativo)}
       >
         {ativo ? 'Ativo' : 'Inativo'}

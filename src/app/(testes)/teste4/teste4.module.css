@@ -1,5 +1,13 @@
+.containerPrincipal {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
 .button {
   background-color: rgb(224, 233, 224);
+  text-align: center;
 }
 
 .ativo {
