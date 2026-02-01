@@ -1,5 +1,6 @@
 "use client"
 
+import clsx from "clsx";
 import { useState } from "react";
 import styles from "./teste3.module.css"
 
@@ -15,12 +16,10 @@ const Teste3 = () => {
     <div>
       <h1>Teste 3</h1>
 
-      <div className={styles.rotate_scale_down}><p>nome</p></div>
-
-      <button onClick={toggleCardVirado}>
-        <div className={cardVirado ? styles.flip_horizontal_top : ""}>{texto}</div>
+      <button onClick={toggleCardVirado} className={styles.buttonToggle}>
+        {cardVirado && <div className={styles.flip_horizontal_top}>{texto}</div>}
+        {!cardVirado && <div className={styles.flip_horizontal_top}>{texto}</div>}
       </button>
-
 
     </div>
   )

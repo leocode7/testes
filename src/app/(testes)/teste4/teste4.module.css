@@ -1,0 +1,11 @@
+.button {
+  background-color: rgb(224, 233, 224);
+}
+
+.ativo {
+  background-color: rgb(99, 255, 38);
+}
+
+.inativo {
+  background-color: red;
+}

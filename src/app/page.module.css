@@ -6,5 +6,11 @@
 
 .testeLink {
   text-decoration: none;
-  color:blue;
+  color:rgb(76, 0, 163);
+}
+
+.containerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
