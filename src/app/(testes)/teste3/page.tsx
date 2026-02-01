@@ -5,11 +5,11 @@ import styles from "./teste3.module.css"
 
 const Teste3 = () => {
   const [texto, setTexto] = useState<string>("A");
-  const [classe, setClasse] = useState<string>("");
+  const [cardVirado, setCardVirado] = useState<boolean>(false);
 
-  const toggleTexto = () => {
-    setTexto("B");
-    setClasse("flip_horizontal_top")
+  const toggleCardVirado = () => {
+    setCardVirado(prev => !prev);
+    setTexto(texto === "B" ? "A" : "B")
   }
   return (
     <div>
@@ -17,8 +17,8 @@ const Teste3 = () => {
 
       <div className={styles.rotate_scale_down}><p>nome</p></div>
 
-      <button onClick={toggleTexto}>
-        <div className={styles[classe]}>{texto}</div>
+      <button onClick={toggleCardVirado}>
+        <div className={cardVirado ? styles.flip_horizontal_top : ""}>{texto}</div>
       </button>
 
 
