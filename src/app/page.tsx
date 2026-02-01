@@ -11,6 +11,7 @@ export default function Home() {
       <ul>
         <li><Link href={"/teste1"} className={styles.testeLink}>Teste 1 - Mudar frase através de um input</Link></li>
         <li><Link href={"/teste2"} className={styles.testeLink}>Teste 2 - Toggle com 4 opções (usando css.module)</Link></li>
+        <li><Link href={"/teste3"} className={styles.testeLink}>Teste 3 - Animação css (site animista)</Link></li>
       </ul>
     </div>
   );
