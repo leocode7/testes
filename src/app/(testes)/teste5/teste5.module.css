@@ -1,0 +1,28 @@
+.containerPrincipal {
+  display: flex;
+  gap: 10px;
+
+  background-color: aqua;
+  width: 500px;
+  height: 500px;
+}
+
+.containerFilho {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+
+}
+
+.containerFilho:hover {
+  animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

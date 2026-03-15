@@ -13,6 +13,7 @@ export default function Home() {
         <li><Link href={"/teste2"} className={styles.testeLink}>Teste 2 - Toggle com 4 opções: usando css.module</Link></li>
         <li><Link href={"/teste3"} className={styles.testeLink}>Teste 3 - Animação css (site animista)</Link></li>
         <li><Link href={"/teste4"} className={styles.testeLink}>Teste 4 - Toggle com duas opções: alternando as classes usando a biblioteca clsx</Link></li>
+        <li><Link href={"/teste5"} className={styles.testeLink}>Teste 5 - transform / animation / @keyframes</Link></li>
       </ul>
     </div>
   );
