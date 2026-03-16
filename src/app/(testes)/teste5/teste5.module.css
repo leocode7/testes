@@ -45,6 +45,10 @@
   transform: scale(1.1);
 }
 
+.containerFilho4:active {
+  transform: scale(0.9);
+}
+
 .containerFilho5 {
   background-color: rgb(60, 255, 60);
   width: 50px;
